@@ -5,7 +5,7 @@ import org.springframework.data.redis.core.ZSetOperations
 import org.springframework.stereotype.Service
 
 @Service
-class RedisService(
+class RedisZSetOperationsService(
     private val redisTemplate: StringRedisTemplate
 ) {
     private final val zSetOperations: ZSetOperations<String, String> = redisTemplate.opsForZSet()
