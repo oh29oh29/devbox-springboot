@@ -1,4 +1,4 @@
-package com.oh29oh29.devbox.springboot.nosql.redis.service
+package com.oh29oh29.redis.service
 
 import org.springframework.data.redis.core.StringRedisTemplate
 import org.springframework.data.redis.core.ValueOperations

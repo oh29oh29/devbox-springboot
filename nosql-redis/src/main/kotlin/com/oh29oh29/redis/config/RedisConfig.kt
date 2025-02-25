@@ -1,4 +1,4 @@
-package com.oh29oh29.devbox.springboot.nosql.redis.config
+package com.oh29oh29.redis.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

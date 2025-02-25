@@ -1,13 +1,13 @@
-package com.oh29oh29.devbox.springboot.nosql.redis
+package com.oh29oh29.redis
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication(
-    scanBasePackages = ["com.oh29oh29.devbox"]
+    scanBasePackages = ["com.oh29oh29.redis"]
 )
-class ApiRedisApplication
+class RedisApplication
 
 fun main(args: Array<String>) {
-    runApplication<ApiRedisApplication>(*args)
+    runApplication<RedisApplication>(*args)
 }
