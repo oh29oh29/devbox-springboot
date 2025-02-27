@@ -8,6 +8,10 @@ spring:
     password: password
   jpa:
     open-in-view: false
+    show-sql: true        # The simplest way to dump the queries to standard out
+    properties:
+      hibernate:
+        format_sql: true  # pretty-print the SQL
   h2:
     console:
       enabled: true
@@ -15,3 +19,4 @@ spring:
 logging:
   level:
     root: debug
+    org.hibernate.orm.jdbc.bind: TRACE  # log a query with binding parameters
