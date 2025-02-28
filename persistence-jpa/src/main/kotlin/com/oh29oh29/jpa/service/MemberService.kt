@@ -12,9 +12,20 @@ class MemberService(
 
     init {
         save()
+        println(select())
     }
 
     private fun save() {
-        memberRepository.save(Member("user name"))
+        memberRepository.save(
+            Member(
+                "user name",
+                "address",
+                "01012341234",
+                "dev@dev.com"
+            )
+        )
     }
+
+    private fun select() =
+        memberRepository.findByCondition("address", "dev@dev.com")
 }
